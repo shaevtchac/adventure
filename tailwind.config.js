@@ -11,21 +11,13 @@ module.exports = {
     },
 
     fontFamily: {
-      sans: ['Montserrat', 'sans-serif'],
+      openSans: ['Open Sans', 'sans-serif'],
+      marker: ['Permanent Marker', 'cursive'],
     },
     extend: {
-      spacing: {
-        128: '32rem',
-        144: '36rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-      },
-      colors: {
-        orangec: '#e9560d',
-        orangec_light: '#f3e383',
-      },
+      colors: {},
     },
   },
+
   plugins: [],
 };

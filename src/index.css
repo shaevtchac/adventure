@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-  h2 {
-    @apply text-orangec font-bold text-lg text-center leading-tight;
+  h1 {
+    @apply text-center font-marker text-4xl text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
   }
-  h3 {
-    @apply font-bold text-center mt-3 mb-1;
+  p {
+    @apply font-openSans text-white;
   }
   button {
-    @apply bg-orangec text-white rounded px-6 py-2 transition-all duration-500;
+    @apply bg-[url(img/button-shape.svg)] bg-contain bg-center bg-no-repeat py-4 pl-8 pr-12 font-openSans font-bold text-black transition-all duration-500;
   }
 
   button:hover {
-    @apply shadow-lg scale-110 contrast-200;
+    @apply scale-110 shadow-lg contrast-200;
   }
 }
 
@@ -23,3 +23,14 @@
 
 @layer utilities {
 }
+
+.hero-image {
+  clip-path: url(#shape-lg);
+  object-fit: cover;
+  object-position: center;
+}
+
+/* svg path {
+  transform-box: content-box;
+  transform-origin: center;
+} */
